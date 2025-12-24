@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="hearts-bg"></div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Happy Birthday, My Love!</h1>
+            <p class="subtitle">Counting down the moments until your special day...</p>
+
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <div>Days</div>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <div>Hours</div>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <div>Minutes</div>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <div>Seconds</div>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button id="love-btn" class="love-btn">Shower Love 💖</button>
+                <button id="rose-btn" class="rose-btn">🌹</button>
+            </div>
+        </section>
+
+        <!-- Proposal Modal -->
+        <div id="proposal-modal" class="modal hidden">
+            <div class="modal-content">
+                <h1>Will you marry me? 💍</h1>
+                <div class="modal-buttons">
+                    <button class="yes-btn" onclick="celebrateProposal()">YES! 💖</button>
+                    <button class="no-btn" onclick="closeModal()">Think about it...</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2>Our Memories</h2>
+            <div class="photo-grid">
+                <!-- Replace 'photo1.jpg' etc with your actual file names -->
+                <div class="photo-card">
+                    <img src="images/photo1.jpg" alt="Memory 1"
+                        onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'photo-placeholder\'>Add photo1.jpg to static/images</div>'">
+                </div>
+                <div class="photo-card">
+                    <img src="images/photo1.jpg" alt="Memory 2"
+                        onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'photo-placeholder\'>Add photo1.jpg to static/images</div>'">
+                </div>
+                <div class="photo-card">
+                    <img src="images/photo1.jpg" alt="Memory 3"
+                        onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'photo-placeholder\'>Add photo1.jpg to static/images</div>'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="glass-card">
+                <h2>My Wish For You</h2>
+                <p class="message-text">
+                    "On this special day, I just want to remind you how incredibly special you are to me.
+                    May your day be filled with all the joy, laughter, and love that you bring into the world.
+                    Here's to another year of us making beautiful memories together. Happy Birthday!"
+                </p>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>From your love, <strong>Amit Jha</strong> ❤️</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: birthday-love
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
